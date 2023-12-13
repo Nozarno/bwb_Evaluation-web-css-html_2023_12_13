@@ -6,15 +6,70 @@
         <prenom>Arnaud</prenom>
     </identity>
     <questions>
-        <enonces>Quelle est l’utilité de l’élément ?</enonces>
-        <enonces>Définir la sémantique du web.</enonces>
-        <enonces>Citez des éléments du DOM se référant au contenu textuel d’un structure html.</enonces>
-        <enonces>Qu’est-ce qu’un Framework css ?</enonces>
-        <enonces>Quels sont les points communs et les différences entre le Html et le Xml ?</enonces>
-        <enonces>Que contient les éléments head et body ? Quelle est leur relation avec l’objet html ?</enonces>
-        <enonces>Citez 3 protocoles applicatifs du TCP/IP.</enonces>
-        <enonces>Décrire en quelques lignes le modèle client-serveur.</enonces>
-        <enonces>Comment mettre un commentaire en html5 et en CSS ?</enonces>
-        <enonces>Quel est le rôle du W3C ?</enonces>
+        <question id="1">
+            <enonces>Quelle est l’utilité de l’élément ?</enonces>
+            <reponse>Un élément sert à organiser des informations et à leur donner un usage dans un langage de
+                structure.
+            </reponse>
+        </question>
+        <question id="2">
+            <enonces>Définir la sémantique du web.</enonces>
+            <reponse>La sémantique du web, parfois appelée Web 3.0, consiste en l'ajout de métadonnées, informations
+                attachées au contenu et destinées aux machines. Cela permet aux robots de comprendre le sens et le
+                contexte des contenus.
+            </reponse>
+        </question>
+        <question id="3">
+            <enonces>Citez des éléments du DOM se référant au contenu textuel d’une structure html.</enonces>
+            <reponse>Exemples d'éléments du DOM se référant à du texte : p, h1 à h6, em, strong, span.</reponse>
+        </question>
+        <question id="4">
+            <enonces>Qu’est-ce qu’un Framework CSS ?</enonces>
+            <reponse>Les frameworks CSS, tels que Bootstrap (Framework HTML, CSS et JS) et Tailwind, sont des outils qui
+                offrent une approche différente de l'application du CSS. Ils visent à apporter des solutions pour
+                l'utilisation du CSS natif, comme la construction rapide de maquettes et peuvent simplifier grandement
+                le temps de développement.
+            </reponse>
+        </question>
+        <question id="5">
+            <enonces>Quels sont les points communs et les différences entre le HTML et le XML ?</enonces>
+            <reponse>Le HTML et le XML sont deux langages de structuration et présentation de l'information. Les données
+                sont structurées autour de balises, qui peuvent avoir des attributs. Ces deux langages utilisent le même
+                modèle pour structurer les données, sous la forme d'un arbre.
+            </reponse>
+        </question>
+        <question id="6">
+            <enonces>Que contiennent les éléments head et body ? Quelle est leur relation avec l’objet html ?</enonces>
+            <reponse>Les éléments head et body sont des enfants de l'élément html et sont frères entre eux. Le head
+                contient des métadonnées, des informations pour le navigateur ou les robots d'indexation. Le body
+                contient les informations structurées pour être présentées.
+            </reponse>
+        </question>
+        <question id="7">
+            <enonces>Citez 3 protocoles applicatifs du TCP/IP.</enonces>
+            <reponse>HTTP, FTP, SSH.</reponse>
+        </question>
+        <question id="8">
+            <enonces>Décrire en quelques lignes le modèle client-serveur.</enonces>
+            <reponse>Le modèle client-serveur décrit une communication où le client est un périphérique initiant une
+                connexion pour échanger des informations avec un serveur. Le serveur reçoit la demande et fournit un
+                service demandé.
+            </reponse>
+        </question>
+        <question id="9">
+            <enonces>Comment mettre un commentaire en HTML5 et en CSS ?</enonces>
+            <reponse>Les commentaires en HTML : <![CDATA[<!-- Ceci est un commentaire  -->]]>. En CSS : /* Ceci est un
+                commentaire */.
+            </reponse>
+        </question>
+        <question id="10">
+            <enonces>Quel est le rôle du W3C ?</enonces>
+            <reponse>Le W3C est un organisme qui standardise les langages du web. Son rôle principal est de rendre le
+                web universel, accessible et sécurisé pour tous. Il aide également à suivre et à favoriser l'évolution
+                du web.
+            </reponse>
+        </question>
+
+
     </questions>
 </eval>
