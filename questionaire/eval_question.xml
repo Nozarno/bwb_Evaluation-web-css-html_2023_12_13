@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<eval>
+    <title>Evaluation - M4-Intégration Web</title>
+    <identity>
+        <nom>NOZARNO</nom>
+        <prenom>Arnaud</prenom>
+    </identity>
+    <questions>
+        <enonces>Quelle est l’utilité de l’élément ?</enonces>
+        <enonces>Définir la sémantique du web.</enonces>
+        <enonces>Citez des éléments du DOM se référant au contenu textuel d’un structure html.</enonces>
+        <enonces>Qu’est-ce qu’un Framework css ?</enonces>
+        <enonces>Quels sont les points communs et les différences entre le Html et le Xml ?</enonces>
+        <enonces>Que contient les éléments head et body ? Quelle est leur relation avec l’objet html ?</enonces>
+        <enonces>Citez 3 protocoles applicatifs du TCP/IP.</enonces>
+        <enonces>Décrire en quelques lignes le modèle client-serveur.</enonces>
+        <enonces>Comment mettre un commentaire en html5 et en CSS ?</enonces>
+        <enonces>Quel est le rôle du W3C ?</enonces>
+    </questions>
+</eval>
