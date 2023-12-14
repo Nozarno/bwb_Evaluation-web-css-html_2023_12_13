@@ -80,15 +80,15 @@ Utilisez HTML5 pour la structure.
 
 ## Liste de chose à faire : 
 - [x] Maquette  des diférente vue
-- [ ] Liste des point boquant 
+- [x] Liste des point boquant 
   - [x] Menu sticky -> Test valider 
   - [x] Menu shandwich (Telephone et tab) -> Tailwind
-  - [ ] Bouton hide dans le menu Destop
-- [ ] Creer tous le contenue HTML
+  - [x] Bouton hide dans le menu Destop
+- [x] Creer tous le contenue HTML
   - [x] Home
   - [x] Menu
-  - [ ] A Porpos
-  - [ ] contact
+  - [x] A Porpos
+  - [x] contact
 - [ ] Structurer chaque vue en mobile first 
   - [ ] Home
   - [ ] Menu 
