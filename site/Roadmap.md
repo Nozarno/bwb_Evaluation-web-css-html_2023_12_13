@@ -93,5 +93,5 @@ Utilisez HTML5 pour la structure.
   - [x] Home
   - [ ] Menu 
   - [ ] A Porpos 
-  - [ ] contact
+  - [ ] contact 
 - [ ] Faire un rapport (lire le pdf)
