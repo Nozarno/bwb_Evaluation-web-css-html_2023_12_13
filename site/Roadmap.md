@@ -90,7 +90,8 @@ Utilisez HTML5 pour la structure.
   - [x] A Porpos
   - [x] contact
 - [ ] Structurer chaque vue en mobile first 
-  - [ ] Home
+  - [x] Home
   - [ ] Menu 
   - [ ] A Porpos 
   - [ ] contact
+- [ ] Faire un rapport (lire le pdf)

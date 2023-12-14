@@ -22,5 +22,4 @@ pour le rendu, votre projet devra être disponible sur git et dans teams
 ## Questionnaire
 Vous devrez réaliser un document au format XML qui nous permettra votre identité (nom & prénom), les énoncés et les réponses.
 - [x] Identité 
-- [x] Réponse aux question 
-
+- [x] Réponse aux question
