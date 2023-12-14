@@ -88,20 +88,21 @@
 
 <section id="menu" class="w-screen h-screen flex flex-col items-center content-center gap-2">
     <h3 class="p-6 text-xl">Un bon repas, rapidement chez vous</h3>
-    <article class="mb-8 h-2/6 w-full flex flex-col items-center">
+
+    <article class="max-h-full w-full flex flex-col ">
         <h4 class="bg-green-200 w-full  text-center text-4xl p-4">
             Pasta
         </h4>
         <img class="object-cover max-h-full w-full" src="image/pasta.avif"
              alt="Assiette de penne à la sauce bolognaise avec parmesan saupoudré et poivre noir">
-
-        <p class="p-2 mx-auto text-xl">
+        <div>
+        <p >
             Savourez nos délicieuses penne al dente nappées d'une riche sauce bolognaise mijotée à la perfection, garnie
             de
             parmesan fraîchement râpé et d'une touche de poivre noir. Un classique italien réconfortant qui saura
             satisfaire les amateurs de pâtes!
 
-        </p>
+        </p></div>
         <strong class="prix">Prix : 15,00 €</strong>
         <aside>
             <strong>Allergènes :</strong>
@@ -119,11 +120,12 @@
         </aside>
     </article>
 
-    <article class="h-2/6 flex flex-col">
-        <h4>
+    <article  class="mb-8 h-2/6 w-full flex flex-col items-center">
+        <h4 class="bg-green-200 w-full  text-center text-4xl p-4">
             Salade Caprese Croustillante
         </h4>
-        <img class="max-h-full" src="image/tomate.avif"
+        <img class="object-cover max-h-full w-full"
+             src="image/tomate.avif"
              alt="Salade Caprese colorée avec un mélange de tomates, de croûtons et de fromage moelleux">
         <p>
             Découvrez notre interprétation de la salade Caprese, mêlant tomates fraîches, basilic parfumé et mozzarella
@@ -148,7 +150,7 @@
     </article>
 
 </section>
-<section id="howto">
+<section id="howto" class="hidden">
     <h3>Comment ça marche ?</h3>
     <p> Contrairement à la restauration rapide traditionnelle, nous travaillons exclusivement à la commande. Cela vient
         de
@@ -178,7 +180,7 @@
         <p>Vous régalez avec, votre repas cuisiné pour vous aujourd'hui</p>
     </aside>
 </section>
-<section id="about">
+<section class="hidden" id="about">
     <h3>Qui sommes-nous ?</h3>
     <article>
         <h4> Des gens normaux </h4>
@@ -234,7 +236,7 @@
 
     </article>
 </section>
-<section id="contact">
+<section  class="hidden" id="contact">
     <h3>Contactez-nous</h3>
     <p>Vous avez envie de faire partie de notre équipe, de développer votre cuisine. Écrivez-nous </p>
     <p> Tous les messages sont lus et répondus.</p>
@@ -249,7 +251,7 @@
         <button type="submit">Envoyer</button>
     </form>
 </section>
-<footer>
+<footer  class="hidden">
     <section id="rs">
         <h5> Suivez-nous sur les réseaux</h5>
         <div>
@@ -265,7 +267,6 @@
         <a href="#cgucgv">CGU / CGV</a>
     </div>
 </footer>
-<div class="h-0 w-0 fixed top-0 "></div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         // Sélectionner le bouton et le menu
