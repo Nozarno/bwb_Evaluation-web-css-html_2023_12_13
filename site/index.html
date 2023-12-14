@@ -1,65 +1,103 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="w-screen">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ECO - EAT : Un bon repas, bon pour vous et pour la planète</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/custom.css">
 </head>
-<body>
-<section id="home">
-    <header>
-        <img src="image/header.avif" width="800" alt="Une personne qui mange un bon plat">
-        <h1>Manger de bons repas</h1>
-        <h2>Un bonheur vert pour vous et la planète</h2>
+<body class="w-screen">
+<section id="home" class="h-screen w-screen flex flex-col flex-grow">
+    <header class="flex flex-col items-center justify-center ">
+        <img class="h-56 w-full object-cover" src="image/header.avif"
+             alt="Une personne qui mange un bon plat">
+
+        <h1 class="text-4xl p-4 text-green-600 font-bold">Manger de bons repas</h1>
+        <h2 class="text-2xl p-4">Un bonheur vert pour vous et la planète</h2>
 
     </header>
-    <div>
-        <section>
-            <img src="icone/choice.svg" height="200" width="200" alt="">
-            <h4>Choisissez votre repas</h4>
+    <div class="w-full text-lg mx-auto text-center bg-green-200 flex flex-row  items-center content-center justify-around my-2 p-4">
+        <section class="flex flex-col justify-center items-center content-center">
+            <img class="h-10 w-10" src="icone/choice.svg" alt="">
+            <h4 class="w-full">Choisissez votre repas</h4>
         </section>
-        <section>
-            <img src="icone/scooter.svg" height="200" width="200" alt="">
+        <section class="flex flex-col justify-center items-center content-center">
+            <img class="h-10 w-10 self-center" src="icone/scooter.svg" alt="">
             <h4>On vous l'apporte</h4>
         </section>
-        <section>
-            <img src="icone/tray-meal.svg" height="200" width="200" alt="">
+        <section class="flex flex-col justify-center items-center content-center">
+            <img class="h-10 w-10" src="icone/tray-meal.svg" alt="">
             <h4>Vous êtes heureux 😊</h4>
         </section>
     </div>
-    <div id="cta_button_header" > <a href="#menu">Commander mon repas ⇒</a></div>
+
+
+    <div id="navFixer" class="mt-auto">
+        <nav class="bg-green-900 p-2 bottom-1 left-0 right-0">
+            <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center">
+                    <img class="h-16" src="image/logo.png" alt="logo de Eco Eat">
+                </a>
+
+                <!-- Bouton CTA pour petit -->
+                <a href="#menu" class=" md:hidden bg-green-200 text-green-900 uppercase p-1">
+                    <div >
+                        <strong>Commandez ⇒</strong>
+                    </div></a>
+
+                <!-- Bouton du menu hamburger pour petits écrans -->
+                <button data-collapse-toggle="navbar-default" type="button"
+                        class="inline-flex items-center p-2 text-gray-200 rounded-lg md:hidden hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                        aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+
+                <!-- Liste des liens -->
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="flex flex-col md:flex-row md:space-x-4">
+                        <li><a class="block p-2 text-white" href="#home">Accueil</a></li>
+                        <li><a class="block p-2 text-white" href="#menu">Menu</a></li>
+                        <li><a class="block p-2 text-white" href="#about">À propos</a></li>
+                        <li><a class="block p-2 text-white" href="#howto">Comment ça marche ?</a></li>
+                        <li><a class="block p-2 text-white" href="#contact">Contactez-nous</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bouton CTA pour grands écrans -->
+                <a href="#menu" class="hidden md:block bg-green-200 text-green-900 uppercase p-3">
+                    <div id="cta_button_nav">
+                        <strong>Commander mon repas ⇒</strong>
+                    </div></a>
+
+            </div>
+        </nav>
+    </div>
+
+
 </section>
-<!--
-    #navFixer est indispensable pour le menu sticky
-    Il me sert de référence pour savoir quand le menu est en haut ou en bas
--->
-<div id="navFixer">
-    <nav>
-        <img src="image/logo.png" alt="logo de Eco Eat">
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#howto">Comment ça marche ?</a></li>
-            <li><a href="#contact">Contactez-nous</a></li>
-
-        </ul>
-        <div hidden id="cta_button_nav" > <a href="#menu">Commander mon repas ⇒</a></div>
-    </nav>
-</div>
 
 
-<section id="menu">
-    <h3>Un bon repas, rapidement chez vous</h3>
-    <article>
-        <h4>
+<section id="menu" class="w-screen h-screen flex flex-col items-center content-center gap-2">
+    <h3 class="p-6 text-xl">Un bon repas, rapidement chez vous</h3>
+    <article class="mb-8 h-2/6 w-full flex flex-col items-center">
+        <h4 class="bg-green-200 w-full  text-center text-4xl p-4">
             Pasta
         </h4>
-        <img src="image/pasta.avif"
+        <img class="object-cover max-h-full w-full" src="image/pasta.avif"
              alt="Assiette de penne à la sauce bolognaise avec parmesan saupoudré et poivre noir">
-        <p>
-            Savourez nos délicieuses penne al dente nappées d'une riche sauce bolognaise mijotée à la perfection, garnie de
+
+        <p class="p-2 mx-auto text-xl">
+            Savourez nos délicieuses penne al dente nappées d'une riche sauce bolognaise mijotée à la perfection, garnie
+            de
             parmesan fraîchement râpé et d'une touche de poivre noir. Un classique italien réconfortant qui saura
             satisfaire les amateurs de pâtes!
 
@@ -80,11 +118,12 @@
             </ul>
         </aside>
     </article>
-    <article>
+
+    <article class="h-2/6 flex flex-col">
         <h4>
             Salade Caprese Croustillante
         </h4>
-        <img src="image/tomate.avif"
+        <img class="max-h-full" src="image/tomate.avif"
              alt="Salade Caprese colorée avec un mélange de tomates, de croûtons et de fromage moelleux">
         <p>
             Découvrez notre interprétation de la salade Caprese, mêlant tomates fraîches, basilic parfumé et mozzarella
@@ -111,12 +150,14 @@
 </section>
 <section id="howto">
     <h3>Comment ça marche ?</h3>
-    <p> Contrairement à la restauration rapide traditionnelle, nous travaillons exclusivement à la commande. Cela vient de
+    <p> Contrairement à la restauration rapide traditionnelle, nous travaillons exclusivement à la commande. Cela vient
+        de
         nos valeurs que vous pouvez découvrir en détail dans la partie <a href="#about">Qui sommes-nous ?</a></p>
     <aside>
         <img src="icone/producer.svg" alt="">
         <h4>Local, à côté de chez vous</h4>
-        <p> Nous travaillons avec des producteurs, des produits de saison, une liste de plats limitée et des cuisines proches
+        <p> Nous travaillons avec des producteurs, des produits de saison, une liste de plats limitée et des cuisines
+            proches
             de chez vous. Pour vous offrir les meilleurs repas possible. </p>
     </aside>
 
@@ -149,7 +190,8 @@
             cuisiner à la maison. </p>
         <p> À force, ça devenait cher, en plus c'était souvent moins bon que les repas de Catherine et ses produits
             frais.</p>
-        <p> À force de discussions avec Jérémy et Catherine, on a remarqué des problèmes de produits et les livreurs.</p>
+        <p> À force de discussions avec Jérémy et Catherine, on a remarqué des problèmes de produits et les
+            livreurs.</p>
         <ul>
             <li> Les produits ne sont pas forcément bons.</li>
             <li> Ça arrive tard.</li>
@@ -167,12 +209,14 @@
         <ul>
             <li>
                 <p> Un bon goût et de bons produits</p>
-                <p>Manger de bonnes choses est un indispensable, pour cela on crée des cuisines avec de bons cuisiniers et
+                <p>Manger de bonnes choses est un indispensable, pour cela on crée des cuisines avec de bons cuisiniers
+                    et
                     des produits, locaux, bio et en commerce équitable.</p>
             </li>
             <li>
                 <p>Écologie, le respect de la nature au possible</p>
-                <p>De l'agriculteur à l'assiette, nous cherchons toujours le chemin avec le moins de pollution. Les livreurs
+                <p>De l'agriculteur à l'assiette, nous cherchons toujours le chemin avec le moins de pollution. Les
+                    livreurs
                     sont en électrique ou en vélo.</p>
             </li>
             <li>
@@ -182,7 +226,8 @@
             </li>
             <li><p> Être accessible, le respect de nos clients </p>
                 <p> Pour avoir des prix accessibles et respecter nos valeurs, on fait l'inverse de l'industrie. Nous
-                    localisons à max 30 km de nos partenaires et clients nos cuisines. On limite les plats disponibles, on ne
+                    localisons à max 30 km de nos partenaires et clients nos cuisines. On limite les plats disponibles,
+                    on ne
                     jette rien puisque tout est à la commande. </p></li>
 
         </ul>
@@ -190,18 +235,18 @@
     </article>
 </section>
 <section id="contact">
-    <h3 >Contactez-nous</h3>
+    <h3>Contactez-nous</h3>
     <p>Vous avez envie de faire partie de notre équipe, de développer votre cuisine. Écrivez-nous </p>
     <p> Tous les messages sont lus et répondus.</p>
-    <form action="javascript:console.log('OK')" method="post" >
+    <form action="javascript:console.log('OK')" method="post">
         <label hidden for="formName">Votre Nom : </label>
         <input id="formName" type="text" name="name" placeholder="Votre nom">
         <label hidden for="formEmail">Votre email : </label>
-        <input id="formEmail" type="email" name="email" placeholder="Votre email" >
+        <input id="formEmail" type="email" name="email" placeholder="Votre email">
         <label hidden for="formMessage">Message : </label>
-        <textarea id="formMessage" name="message" placeholder="Votre message" ></textarea>
+        <textarea id="formMessage" name="message" placeholder="Votre message"></textarea>
 
-        <button type="submit" >Envoyer</button>
+        <button type="submit">Envoyer</button>
     </form>
 </section>
 <footer>
@@ -220,5 +265,46 @@
         <a href="#cgucgv">CGU / CGV</a>
     </div>
 </footer>
+<div class="h-0 w-0 fixed top-0 "></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Sélectionner le bouton et le menu
+        let toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+        let menu = document.getElementById('navbar-default');
+
+        // Ajouter un écouteur d'événements pour basculer la visibilité du menu
+        toggleButton.addEventListener('click', function () {
+            let isMenuHidden = menu.classList.contains('hidden');
+            if (isMenuHidden) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    });
+
+    window.addEventListener('scroll', function () {
+        let elementNav = document.querySelector("#navFixer > nav");
+        let element = document.getElementById('navFixer');
+        let elementPosition = element.getBoundingClientRect().top;
+
+        if (elementPosition <= 10) {
+            console.log('L\'élément a atteint ou dépassé le haut du viewport.');
+
+
+            elementNav.classList.remove("bottom-1");
+            elementNav.style.top = '0';
+            elementNav.style.left = '0';
+            elementNav.style.right = '0';
+            elementNav.style.position = 'fixed';
+            // element.style.top = '10px'
+            // fixed left-0 right-0 md:static"
+        } else {
+            elementNav.style = '';
+            elementNav.classList.add("bottom-1");
+            console.log('L\'élément est en dessous du haut du viewport.');
+        }
+    });
+</script>
 </body>
 </html>
