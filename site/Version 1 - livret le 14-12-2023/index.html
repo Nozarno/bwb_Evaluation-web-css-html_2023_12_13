@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fr" class="w-screen">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ECO - EAT : Un bon repas, bon pour vous et pour la planète</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body class="w-screen">
+<section id="home" class="h-screen w-screen flex flex-col flex-grow">
+    <header class="flex flex-col items-center justify-center ">
+        <img class="h-56 w-full object-cover" src="image/header.avif"
+             alt="Une personne qui mange un bon plat">
+
+        <h1 class="text-4xl p-4 text-green-600 font-bold">Manger de bons repas</h1>
+        <h2 class="text-2xl p-4">Un bonheur vert pour vous et la planète</h2>
+
+    </header>
+    <div class="w-full text-lg mx-auto text-center bg-green-200 flex flex-row  items-center content-center justify-around my-2 p-4">
+        <section class="flex flex-col justify-center items-center content-center">
+            <img class="h-10 w-10" src="icone/choice.svg" alt="">
+            <h4 class="w-full">Choisissez votre repas</h4>
+        </section>
+        <section class="flex flex-col justify-center items-center content-center">
+            <img class="h-10 w-10 self-center" src="icone/scooter.svg" alt="">
+            <h4>On vous l'apporte</h4>
+        </section>
+        <section class="flex flex-col justify-center items-center content-center">
+            <img class="h-10 w-10" src="icone/tray-meal.svg" alt="">
+            <h4>Vous êtes heureux 😊</h4>
+        </section>
+    </div>
+
+
+    <div id="navFixer" class="mt-auto">
+        <nav class="bg-green-900 p-2 bottom-1 left-0 right-0">
+            <div class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center">
+                    <img class="h-16" src="image/logo.png" alt="logo de Eco Eat">
+                </a>
+
+                <!-- Bouton CTA pour petit -->
+                <a href="#menu" class=" md:hidden bg-green-200 text-green-900 uppercase p-1">
+                    <div >
+                        <strong>Commandez ⇒</strong>
+                    </div></a>
+
+                <!-- Bouton du menu hamburger pour petits écrans -->
+                <button data-collapse-toggle="navbar-default" type="button"
+                        class="inline-flex items-center p-2 text-gray-200 rounded-lg md:hidden hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                        aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+
+                <!-- Liste des liens -->
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="flex flex-col md:flex-row md:space-x-4">
+                        <li><a class="block p-2 text-white" href="#home">Accueil</a></li>
+                        <li><a class="block p-2 text-white" href="#menu">Menu</a></li>
+                        <li><a class="block p-2 text-white" href="#about">À propos</a></li>
+                        <li><a class="block p-2 text-white" href="#howto">Comment ça marche ?</a></li>
+                        <li><a class="block p-2 text-white" href="#contact">Contactez-nous</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bouton CTA pour grands écrans -->
+                <a href="#menu" class="hidden md:block bg-green-200 text-green-900 uppercase p-3">
+                    <div id="cta_button_nav">
+                        <strong>Commander mon repas ⇒</strong>
+                    </div></a>
+
+            </div>
+        </nav>
+    </div>
+
+
+</section>
+
+<h2 class="bg-black text-4xl text-center text-red-600 font-bold p-2"> Débug css , les element sont cahcer pour comprendre pourquoi j'ai des probléme </h2>
+<section id="menu" class="w-screen h-screen flex flex-col items-center content-center gap-2">
+    <h3 class="p-6 text-xl">Un bon repas, rapidement chez vous</h3>
+
+    <article class="max-h-full w-full flex flex-col ">
+        <h4 class="bg-green-200 w-full  text-center text-4xl p-4">
+            Pasta
+        </h4>
+        <img class="object-cover max-h-40 w-full" src="image/pasta.avif"
+             alt="Assiette de penne à la sauce bolognaise avec parmesan saupoudré et poivre noir">
+
+        <p >
+            Savourez nos délicieuses penne al dente nappées d'une riche sauce bolognaise mijotée à la perfection, garnie
+            de parmesan fraîchement râpé et d'une touche de poivre noir. Un classique italien réconfortant qui saura
+            satisfaire les amateurs de pâtes!
+        </p>
+        <strong class="prix">Prix : 15,00 €</strong>
+        <aside>
+            <strong>Allergènes :</strong>
+            <ul>
+                <li>
+                    Gluten (pâtes)
+                </li>
+                <li>
+                    Lactose (fromage parmesan)
+                </li>
+                <li>
+                    Peut contenir des traces de noix et de soja
+                </li>
+            </ul>
+        </aside>
+    </article>
+
+    <article  class="  max-h-full w-full flex flex-col ">
+        <h4 class="bg-green-200 w-full  text-center text-4xl p-4">
+            Salade Caprese Croustillante
+        </h4>
+        <img class="object-cover max-h-full w-full"
+             src="image/tomate.avif"
+             alt="Salade Caprese colorée avec un mélange de tomates, de croûtons et de fromage moelleux">
+        <p>
+            Découvrez notre interprétation de la salade Caprese, mêlant tomates fraîches, basilic parfumé et mozzarella
+            onctueuse. Rehaussée de croûtons dorés et d'une vinaigrette balsamique, cette salade est une symphonie de
+            saveurs estivales.
+        </p>
+        <strong class="prix">Prix : 12,00 €</strong>
+        <aside>
+            <strong>Allergènes :</strong>
+            <ul>
+                <li>
+                    Gluten (croûtons)
+                </li>
+                <li>
+                    Lactose (fromage mozzarella)
+                </li>
+                <li>
+                    Peut contenir des traces de fruits à coque (en fonction de la vinaigrette)
+                </li>
+            </ul>
+        </aside>
+    </article>
+
+</section>
+<section id="howto" class="hidden">
+    <h3>Comment ça marche ?</h3>
+    <p> Contrairement à la restauration rapide traditionnelle, nous travaillons exclusivement à la commande. Cela vient
+        de
+        nos valeurs que vous pouvez découvrir en détail dans la partie <a href="#about">Qui sommes-nous ?</a></p>
+    <aside>
+        <img src="icone/producer.svg" alt="">
+        <h4>Local, à côté de chez vous</h4>
+        <p> Nous travaillons avec des producteurs, des produits de saison, une liste de plats limitée et des cuisines
+            proches
+            de chez vous. Pour vous offrir les meilleurs repas possible. </p>
+    </aside>
+
+    <aside>
+        <img src="icone/choice.svg" alt="">
+        <h4>Choisissez votre menu</h4>
+        <p> Vous commandez dans l'application et votre commande vous sera livrée quand vous le voulez </p>
+    </aside>
+    <aside>
+        <img src="icone/scooter.svg" alt="">
+        <h4>Livré à domicile</h4>
+        <p> On est fier que nos livreurs vous apportent rapidement, à vélo ou scooter électrique, vos repas chauds et
+            froids </p>
+    </aside>
+    <aside>
+        <img src="icone/tray-meal.svg" alt="">
+        <h4>Un bon repas</h4>
+        <p>Vous régalez avec, votre repas cuisiné pour vous aujourd'hui</p>
+    </aside>
+</section>
+<section class="hidden" id="about">
+    <h3>Qui sommes-nous ?</h3>
+    <article>
+        <h4> Des gens normaux </h4>
+        <p>
+            Nous sommes les fondateurs, Jérémy, Catherine et moi, Arnaud. Je vais vous parler en notre nom.
+        </p>
+        <p> En 2020, à cause de la Covid, nous sommes tous restés confinés chez nous. Catherine et moi avons perdu
+            notre travail. Comme un peu tout le monde, le seul moyen pour avoir de bons plats était de commander ou de
+            cuisiner à la maison. </p>
+        <p> À force, ça devenait cher, en plus c'était souvent moins bon que les repas de Catherine et ses produits
+            frais.</p>
+        <p> À force de discussions avec Jérémy et Catherine, on a remarqué des problèmes de produits et les
+            livreurs.</p>
+        <ul>
+            <li> Les produits ne sont pas forcément bons.</li>
+            <li> Ça arrive tard.</li>
+            <li> Pour gagner plus, les livreurs manquent sur les plateformes de livraison.
+            </li>
+            <li> Les produits bio et la cuisine de Catherine sont vraiment top.</li>
+
+        </ul>
+        <strong> C'est comme ça qu'on a décidé de trouver une solution, Eco Eat.</strong>
+    </article>
+    <article>
+        <h4> Des valeurs, du sens </h4>
+        <p> Pour construire Eco Eat, on est parti d'autres constats et de nos valeurs.</p>
+        <strong>Nos valeurs :</strong>
+        <ul>
+            <li>
+                <p> Un bon goût et de bons produits</p>
+                <p>Manger de bonnes choses est un indispensable, pour cela on crée des cuisines avec de bons cuisiniers
+                    et
+                    des produits, locaux, bio et en commerce équitable.</p>
+            </li>
+            <li>
+                <p>Écologie, le respect de la nature au possible</p>
+                <p>De l'agriculteur à l'assiette, nous cherchons toujours le chemin avec le moins de pollution. Les
+                    livreurs
+                    sont en électrique ou en vélo.</p>
+            </li>
+            <li>
+                <p> Le respect du travail </p>
+                <p>Toutes les personnes avec qui on travaille sont payées correctement pour leur travail et sans
+                    intermédiaire.</p>
+            </li>
+            <li><p> Être accessible, le respect de nos clients </p>
+                <p> Pour avoir des prix accessibles et respecter nos valeurs, on fait l'inverse de l'industrie. Nous
+                    localisons à max 30 km de nos partenaires et clients nos cuisines. On limite les plats disponibles,
+                    on ne
+                    jette rien puisque tout est à la commande. </p></li>
+
+        </ul>
+
+    </article>
+</section>
+<section  class="hidden" id="contact">
+    <h3>Contactez-nous</h3>
+    <p>Vous avez envie de faire partie de notre équipe, de développer votre cuisine. Écrivez-nous </p>
+    <p> Tous les messages sont lus et répondus.</p>
+    <form action="javascript:console.log('OK')" method="post">
+        <label hidden for="formName">Votre Nom : </label>
+        <input id="formName" type="text" name="name" placeholder="Votre nom">
+        <label hidden for="formEmail">Votre email : </label>
+        <input id="formEmail" type="email" name="email" placeholder="Votre email">
+        <label hidden for="formMessage">Message : </label>
+        <textarea id="formMessage" name="message" placeholder="Votre message"></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+<footer  class="hidden">
+    <section id="rs">
+        <h5> Suivez-nous sur les réseaux</h5>
+        <div>
+            <a href="#Facebook"><img src="icone/icons8-facebook-64.png" alt="Facebook"></a>
+            <a href="#Youtube"><img src="icone/icons8-youtube-50.svg" alt="YouTube"></a>
+            <a href="#Insta"><img src="icone/icons8-instagram-50.svg" alt="Instagram"></a>
+            <a href="#Tiktok"><img src="icone/icons8-tic-tac-50.png" alt="Tiktok"></a>
+        </div>
+    </section>
+    <p> Copyright Eco Eat | 12 Rue de la Galaxie, Planète Mars </p>
+    <div>
+        <a href="#legal">Mentions légales</a>
+        <a href="#cgucgv">CGU / CGV</a>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Sélectionner le bouton et le menu
+        let toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+        let menu = document.getElementById('navbar-default');
+
+        // Ajouter un écouteur d'événements pour basculer la visibilité du menu
+        toggleButton.addEventListener('click', function () {
+            let isMenuHidden = menu.classList.contains('hidden');
+            if (isMenuHidden) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    });
+
+    window.addEventListener('scroll', function () {
+        let elementNav = document.querySelector("#navFixer > nav");
+        let element = document.getElementById('navFixer');
+        let elementPosition = element.getBoundingClientRect().top;
+
+        if (elementPosition <= 10) {
+            console.log('L\'élément a atteint ou dépassé le haut du viewport.');
+
+
+            elementNav.classList.remove("bottom-1");
+            elementNav.style.top = '0';
+            elementNav.style.left = '0';
+            elementNav.style.right = '0';
+            elementNav.style.position = 'fixed';
+            // element.style.top = '10px'
+            // fixed left-0 right-0 md:static"
+        } else {
+            elementNav.style = '';
+            elementNav.classList.add("bottom-1");
+            console.log('L\'élément est en dessous du haut du viewport.');
+        }
+    });
+</script>
+</body>
+</html>
+<!--
+ INSTANT HUMOUR
+
+ Un peux de Jony CSS
+
+ 🎶 Ho CSS, si tu savais,
+Combien je me sens égaré,
+Avec tes sélecteurs, tes règles,
+J'suis dans le brouillard, c'est un piège.
+
+Tes divs, tes classes, quelle confusion,
+Ça me donne presque des illusions,
+Ho CSS, pourquoi tant de complexité,
+J'préférerais coder en toute simplicité.
+
+Je rêve de jours sans CSS,
+Où le style ne serait pas un stress,
+Avec toi, c'est un labyrinthe sans fin,
+Où je me perds, les mains pleines de chagrin.
+
+Ho CSS, laisse-moi te dire,
+Ton monde n'est pas ce que je désire,
+Dans un univers de codes et de styles,
+J'me sens perdu, sans aucun fil.
+
+Ho CSS, j'espère qu'un jour,
+Je te comprendrai avec amour,
+Mais pour l'instant, laisse-moi avouer,
+Que le CSS, je ne peux pas le gérer. 🎶
+
+-->
